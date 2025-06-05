@@ -1,0 +1,157 @@
+                                                                                                        /* RESPONSIVE */
+@media screen and (max-width: 600px) {
+                    html,body{
+                        width: 100%;
+                        overflow-x: hidden !important;
+                        font-family: "Garamond","Monaco", helvetica;
+                    }
+                    .banner-img{
+                    height: 600px;
+                    }
+                    .banner::after{
+                        top: calc(600px - 450px);
+                    }
+                    .bemvindo{
+                    display: block;
+                    position: absolute;
+                    top: 300;
+                    text-align: center;
+                    z-index: 3;
+                    margin: 0 auto;
+                    }
+                    #welcome{
+                        width: 80%;
+                        color: white;
+                        font-size: 20px;
+                        margin: 0 auto;
+                    }   
+                                                                                                        /* POS-BANNER */
+                    .col-md-12{
+                        flex: 0 0 auto;
+                        width: 100%;
+                        height: 10vw;
+                        font-size: 18px;
+                        margin: 5px 0 25vw 0;
+                        font-family: GothamPro-Medium;
+                        letter-spacing: 0.25em;
+                    }
+                    .container-gestao{
+                        height: auto;
+                    }
+                    .col-md-3{
+                        flex: 0 0 auto;
+                        width: 80%;
+                        height: 180px;
+                        transition: 0.5s;
+                        text-align: center;
+                        justify-content: space-around;
+                        margin: 10vw 0;
+                    }
+                                                                                                        /* Catálogo */
+                    .areas{
+                        margin: 15vw 0 20px 20px;
+                        height: auto;
+                    }                                                                                    
+                    .titulo_area{
+                        text-align: center;
+                        width: 90%;
+                        font-size: 20px;
+                    }
+                    .linha{
+                        width: 90%;
+                        margin: 5px 0 0px 20px;
+                    }
+                    .areas_lista{
+                    padding: 15px 10px ;
+                }
+                .projeto{
+                    margin-top: 10px;
+                }
+                .projeto:first-child{
+                    margin-left: 70px;
+                }
+                .seta-esquerda, .seta-direita{
+                  width: 80px;
+                  height: 400px;
+                  top: 60;
+                }
+                #cor-seta-1{
+                    top: 80;
+                }
+                .projeto:hover .projeto_info{
+                    transform: none;
+                    transition: 0.5s;
+                }
+                .projeto:hover{
+                transform: scale(1);
+                }
+                .projeto_info{
+                    background-color: #777e894f;
+                    height: 80px;
+                    width: 100%;
+                    padding: 5px 5px 0 5px;
+                    color: white;
+                    line-height: 14px;
+                    font-size: 11px;
+                    text-align: center;
+                    transform: scale(1);
+                    font-family: sans-serif;
+                }
+                .img_fluid{
+                    height: 300px;
+                }
+                
+                /* Contato */
+                #contato{
+                    width: 180px;
+                }                            
+    
+}
+
+@media screen and (min-width: 600px) and  (max-width: 900px){
+                    .container-gestao{
+                        height: auto;
+                        width: 90%;
+                    }
+                    .col-md-3{
+                        flex: 0 0 auto;
+                        width: 20%;
+                        height: 180px;
+                        transition: 0.5s;
+                        text-align: center;
+                        justify-content: space-around;
+                        margin: 10vw 0;
+                    }
+                    .resumo-col {
+                    position: relative;
+                    margin: 0 15px;
+                    font-size: 12px;
+                    line-height: 15px;
+                    font-family: GothamPro-Light;
+                    letter-spacing: 1;
+                }
+                .projeto:hover .projeto_info{
+                    transform: none;
+                    transition: 0.5s;
+                }
+                .projeto:hover{
+                transform: scale(1);
+                }
+                .projeto_info{
+                    background-color: #777e894f;
+                    height: 80px;
+                    width: 100%;
+                    padding: 5px 5px 0 5px;
+                    color: white;
+                    line-height: 14px;
+                    font-size: 11px;
+                    text-align: center;
+                    transform: scale(1);
+                    font-family: sans-serif;
+                }
+                .seta-esquerda, .seta-direita{
+                  width: 120px;
+                  height: 400px;
+                  top: 60;
+                }
+}

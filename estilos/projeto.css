@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/imagens/bannertest3.jpg);
+    background-repeat: repeat;
+      background-position: 0 0, center;
+       background-size: 30%;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    display: block;
+}
+.conteudo_proj{
+    display: block;
+    position: relative;
+    top: 150px;
+        font-family: Poppins, sans-serif;
+    border: 1px white solid;
+    border-radius: 30px;
+    margin: 0 30px 50px 30px;
+    background-color: #e0ecff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+.titulo_projeto{
+    position: relative;
+    text-align: center;
+    padding: 20px 30px 0px 30px;
+    color: black;
+    display: block;
+    font-size: 35px;
+}
+.conteudo{
+    position: relative;
+    text-align: justify;
+    color: black;
+    font-size: 30px;
+    display: block;
+    margin: 20px 20px;
+}
+ul{
+     position: relative;
+    text-align: justify;
+    color: black;
+    padding: 5px;
+    font-size: 25px;
+    display: block;
+    margin: 0 0 0 35px;
+}
+.conteudo2{
+    position: relative;
+    text-align: justify;
+    color: black;
+    padding: 30px;
+    font-size: 25px;
+    display: block;
+}
+
+/* Agenda 2030 */
+.titulo_agenda{
+     position: absolute;
+    text-align: center;
+    top: 26;
+    left: 43%;
+    color: white;
+    font-size: 35px;
+}
+.agenda{
+     display: block;
+    position: relative;
+        font-family: Poppins, sans-serif;
+    border: 1px white solid;
+    border-radius: 30px;
+    margin-top: 20px;
+     top: 170px;
+    background-color: #e0ecff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+.container-img-agenda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img-agenda{
+    height: 120px;
+    margin: 20px 10px;
+}
+#faixa-agenda-pjt{
+    height: 45px;
+    margin-top: 25px;
+    width: 100%;
+}
+
+/* Galeria */
+.galeria{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+        font-family: Poppins, sans-serif;
+    border: 1px white solid;
+    border-radius: 30px;
+    margin: 0 auto;
+    background-image: url(/imagens/bannerteste.jpg);
+    width: 70%;
+    top: 170px;
+}
+.img_galeria{
+    display: inline-block;
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    margin: 15px 0 20px 0;
+}
+
+/* Vídeo */
+.video{
+    padding-top: 20px;
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 150px;
+    position: relative;
+    width: 80%;
+    height: 75%;
+    margin-bottom: 30px;
+}
+
+/* Contato */
+#contato{
+    position: fixed;
+    top: 90%;
+    left: 1%;
+    padding: 10px;
+    z-index: 10000000;
+}
+
+
+
+
+
+                                                                                                    /* Temas */
+    .titulo_tema{
+        color: white;
+        font-size: 50px;
+        display: block;
+        text-align: center;
+    }                                                          
+    .conteudo_temas{
+        position: relative;
+        display: flex;
+         width: 100%;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        top: 150;
+        font-family: Poppins, sans-serif;
+    }
+    
+    
+    
+    /*------------------------------------------------------------------------------------------------ RESPONSIVE ------------------------------------------------------------------------------------------------ */
+@media screen and (max-width: 600px) {
+
+                                                                                                         /* PROJETO */
+                /* Vídeo */
+                    .video{
+                        padding-top: 20px;
+                         display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        top: 150px;
+                        position: relative;
+                        width: 80%;
+                        height: 30%;
+                        margin-bottom: 30px;
+                    }
+                    .titulo_projeto{
+                       font-size: 30px; 
+                    }
+                    .conteudo{
+                        font-size: 20px; 
+                    }
+                    ul{
+                        font-size: 20px;
+                        text-align: center;
+                        margin: 10px 10vw;
+                    }
+                    .conteudo2{
+                    font-size: 20px; 
+                    }
+                    
+                    /* Agenda 2030 */
+                .titulo_agenda{
+                    left: 23%;
+                }
+                .img-agenda{
+                    height: 80px;
+                    margin: 20px 10px;
+                }
+                #contato{
+                width: 180px;
+                }
+                    
+}

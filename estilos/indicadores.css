@@ -1,0 +1,55 @@
+.embreve{
+    position: relative;
+    display: block;
+    top: 150px;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+.footer-temas{
+    margin-top: 20vw;
+}
+
+.loader-embreve{
+    position: absolute;
+				left: 50%;
+				margin-left: -80px;
+				top: 30%;
+				margin-top: -50px;
+			width: 170px;
+			height: 70px;
+
+    --g: radial-gradient(farthest-side,#0000 calc(95% - 3px),#ffffff calc(100% - 3px) 98%,#0000 101%) no-repeat;
+    background: var(--g), var(--g), var(--g);
+    background-size: 30px 30px;
+    animation: l9 1s infinite alternate;
+  }
+  @keyframes l9 {
+    0% {
+      background-position: 0 50%, 50% 50%, 100% 50%;
+    }
+    20% {
+      background-position: 0 0, 50% 50%, 100% 50%;
+    }
+    40% {
+      background-position: 0 100%, 50% 0, 100% 50%;
+    }
+    60% {
+      background-position: 0 50%, 50% 100%, 100% 0;
+    }
+    80% {
+      background-position: 0 50%, 50% 50%, 100% 100%;
+    }
+    100% {
+      background-position: 0 50%, 50% 50%, 100% 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .loader-embreve{
+        width: 120px;
+        margin-top: -120px;
+        margin-left: -65px;
+    }
+  }

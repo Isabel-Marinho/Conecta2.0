@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+    /* ------------------- Ícones nav -------------------- */
+    .icons_nav{
+        width: 25%;
+    }
+            .icone{
+                position: absolute;
+                top: 50%;
+                transition: all 0.3s;
+            }
+            .icone:hover{
+                scale: 1.2;
+            }
+            .instagram{
+                right: 15vw;
+                scale: 1;
+            }
+            .notificacao{
+                right: 10vw;
+            }
+
+     /* ----------------- Menu -------------------- */
+            .menu{
+                display: block;
+                right: 5vw;
+                text-decoration: none
+            }
+            .navOpen {
+                overflow: hidden;
+            }
+            .menuall{
+                background-color: #111;
+                z-index: 100;
+                transition-duration: 0.5s;
+                transition-timing-function: swing;
+            }
+            .menuall.open {
+                transform: translateX(-20vw);
+                -webkit-transform: translateX(-20vw);
+                box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+            }
+            .openMenu{
+                transition-duration: 0.5s;
+                transition-timing-function: swing;
+            }
+            .openMenu:hover{
+                cursor: pointer;
+            }
+            .fundomenu{
+                display: none;
+                z-index: 2;
+                background-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0, 0, 0, 0));;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+            }
+            .fundomenu.open{
+                display:block;
+            }
+            .dropdown{
+                position: fixed;
+                display: inline-block;
+                z-index: -10;
+                height: 100%;
+                top: 120px;
+                right: 0;
+                width: 20vw;
+                max-width: 30vw;
+                background-image: linear-gradient(to left, #3a3a3a, black);
+                transition-duration: all 0.5s;
+                transition-timing-function: swing;
+                font-family: helvetica;
+                font-weight: 700;
+                text-decoration: none;
+                text-align: center;
+                justify-content: center;
+            }
+            .dropdown a{
+                text-decoration: none;
+                color: currentColor;
+            }
+            .dropdown.open{
+                z-index: 3;
+            }
+            .tab1{
+                margin-top: 15px;
+            }
+            .tabs{
+                position: relative;
+                height: 10%;
+                margin-bottom: 10px;
+                transition-duration: 0.25s;
+                display: block;
+                padding: 5px 40px;
+                color: white;
+                letter-spacing: 0.02em;
+                text-align: center;
+                justify-content: center;
+                text-decoration: none !important;
+            }
+            .dropdown:hover .tabs {
+                color: rgb(123, 123, 123);
+              }
+             .dropdown .tabs:hover {
+                cursor: pointer;
+                color: rgb(255, 255, 255);
+              }
+
+
+    /* ------------------- Header --------------------- */
+        .transparent-nav{
+        background-color: rgba(0, 0, 0, 0.8);
+        }
+        .nav{
+            display: flex;
+            position: fixed;
+            height: 120px;
+            top: 0;
+            padding: 20px;
+            z-index: 100;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .navbar-projetos{
+            position: fixed;
+            display: flex;
+            height: 120px;
+            top: 0;
+            padding: 20px;
+            width: 100%;
+            background-color: #fff;
+            z-index: 100000;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            justify-content: center;
+        }
+        .voltar{
+            left: 0;
+            height: auto;
+        }
+        .sublinha{
+            background-color: #57addf; 
+            margin: auto;
+            width: 80%;
+            margin-bottom: 10px;
+            height: 3px;
+            position: relative;
+            text-align: center;
+            display: block;
+        }
+        .logo{
+            width: 250px;
+            height: auto;
+            transition: 0.3s;
+        }
+        .logo_banner{
+            width: 350px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        .areas_banner{
+            text-decoration: none;
+            color: black;
+            font-family: Poppins, sans-serif;
+            font-weight: bold;
+        }
+        .areas_banner:hover{
+            color: #57addf;
+            transition: 0.3s;
+        }
+        #link-celular{
+            display: none;
+        }
+        #contato-banner{
+                    width: 150px;
+                    }
+        .banner-links{
+            text-align: center;
+            color: black;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 24px;
+            text-transform: uppercase;
+            padding: 20px 10px;
+            width: 250px;
+        }
+        .nav-links{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+    /* Footer */
+        .footer{
+            color: white;
+            display: inline;
+            text-align: center;
+            width: 100%;
+            padding-bottom: 30px;
+            float: left;
+            background-color: #111;
+            z-index: 1;
+        }
+        .footer2{
+            bottom: 0;
+            padding-top: 10px;
+            margin-top: 170px;
+            color: white;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+        .faperj{
+            margin: 20px;
+            display: inline;
+            height: 80px;
+            left: 80;
+        }
+        .ceed{
+            display: inline;
+            width: 150px;
+            right: 80;
+        }
+
+        #logo-uerj{
+            height: 180px;
+            margin: 10px 0;
+        }
+        #uerj{
+            color: white;
+        height: 100px;
+        text-decoration: none; 
+        }
+        #linha-footer{
+            background-color: #FFF; 
+            margin: auto;
+        width: 30%;
+        margin-bottom: 10px;
+            height: 0.5px;
+            position: relative;
+            text-align: center;
+            display: block;
+        }
+        #faixa-agenda{
+            width: 100%;
+        }
+        #agenda-2030{
+            padding: 15px 0;
+            width: 60%;
+        }
+
+
+
+                                                                                                    /* RESPONSIVE */
+@media screen and (max-width: 600px) {
+            html,
+            body{
+                width: 100%;
+            }
+             /* Redes Sociais */
+             .instagram{
+                display: none;
+            }
+            .notificacao{
+                display: none;
+            }
+            .menu{
+                position: absolute;
+                top: 80%;
+                right: 5%;
+                scale: 1;
+                transition: 0.3s;
+            }
+            .dropdown{
+                width: 100%;
+                max-width: 100%;
+            }
+            .nav{
+                height: 32vw;
+                top: 0;
+                padding: 10px;
+                z-index: 10;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 1) !important;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            .navbar-projetos{
+                position: fixed;
+                display: flex;
+                width: 100%;
+                height: 20vw;
+                justify-content: center;
+            }
+            #nav-projt{
+                position: relative;
+                top: -10;
+            }
+            .voltar{
+                height: 50px;
+            }
+            .logo{
+                position: absolute;
+                left: 30%;
+                padding: 10px 0;
+                top: 17px;
+                margin: 0 auto;
+                 width: 150px;
+            }
+            .logo_banner{
+                width: 250px;
+                height: auto;
+                padding-bottom: 30px;
+            }
+            .areas_banner{
+                display: block;
+                width: 60px;
+            }
+            #link-celular{
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            #link-pc{
+                display: none;
+            }
+            .banner-links{
+                text-align: center;
+                color: black;
+                position: relative;
+                font-size: 8px;
+                font-weight: 500;
+                line-height: 10px;
+                text-transform: uppercase;
+                padding: 10px 5px;
+                top: 60;
+                left: 0;
+            }
+            #contato-banner{
+                display: none;
+            }
+            .nav-links{
+                width: 100%;
+                margin: 0 auto;
+            }
+                                                                                                        /* Footer */
+            #logo-uerj{
+                height: 120px;
+                margin: 10px 0;
+            }
+            #uerj{
+                font-size: 12px;
+               height: 50px;
+            }
+            #linha-footer{
+                margin: auto;
+              width: 80%;
+            }                                                                               
+            .faperj{
+                margin: 10px;
+                height: 50px;
+                width: 150;
+                left: 20;
+            }
+            .ceed{
+                width: 100px;
+                right: 20;
+            }    
+            #agenda-2030{
+                width: 80%;
+            }
+ 
+}
+
+@media screen and (min-width: 600px) and  (max-width: 1300px){
+    .faperj{
+                left: 20;
+                top: 250em;
+            }
+            .ceed{
+                right: 20;
+                top: 250em;
+            }    
+            #linha-footer{
+                margin: auto;
+              width: 80%;
+            }    
+}
+
+@media screen and (min-width: 900px) and  (max-width: 1600px){
+            #linha-footer{
+                margin: auto;
+              width: 80%;
+            }    
+            .nav{
+                height: 120px;
+                top: 0;
+                padding: 10px;
+                z-index: 10;
+                width: 100%;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            .banner-links{
+                display: flex;
+                text-align: center;
+                color: black;
+                position: relative;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 18px;
+                text-transform: uppercase;
+                padding: 10px 5px;
+                top: 60;
+                left: 20;
+                height: 50px;
+                justify-content: center;
+                margin: 0 10px;
+            }
+            .areas_banner:hover{
+                color: #57addf;
+                transition: 0.3s;
+            }
+            .nav-links{
+                width: 100%;
+                margin: 0 auto;
+            }
+            #link-pc{
+                position: absolute;
+                display: flex;
+                flex-wrap: nowrap;
+                top: 60;
+            }
+            #space{
+                display: none;
+            }
+            .voltar{
+                height: 50px;
+            }
+            .logo{
+                position: absolute;
+                left: 20;
+                padding: 10px 0;
+                margin: 0 auto;
+                 width: 250px;
+            }
+}

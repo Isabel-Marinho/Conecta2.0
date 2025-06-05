@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111;
+    font-family: "Garamond","Monaco",sans-serif;
+}
+
+/* banner */
+.banner{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+}
+.banner-img{
+    height: 800px;
+    background-image: url(/imagens/banner-uerj.jpg);
+     background-size: cover;
+    background-repeat: no-repeat;
+      background-position: center center;
+      display: flex;
+    flex: 1 0 auto;
+    z-index: -1;
+     justify-content: center;
+  align-items: center;
+}
+.banner::after{
+    content: '';
+    width: 100%;
+    height: 450px;
+    display: block;
+    background: linear-gradient(180deg,rgb(17 17 17 / 0%) 0%,#111 100%);
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    top: calc(800px - 450px);
+}
+.bemvindo{
+    display: block;
+    position: absolute;
+    top: 350;
+    text-align: center;
+    z-index: 3;
+    margin: 0 auto;
+}
+#welcome{
+    color: white;
+    font-size: 30px;
+}
+
+                                                                                                        /* POS-BANNER */
+.pos-banner{
+    display: flex;
+    background: #111;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    padding: 50px 0;
+    color: #FFF;
+    justify-content: center;
+    margin-bottom: 5vw;
+    border: 10px solid rgba(81,80,85, 0.7);
+    border-right: none;
+    border-left: none;
+}
+.container-gestao{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    height: 350px;
+    text-decoration: none;
+}
+.col-md-12{
+    flex: 0 0 auto;
+    width: 100%;
+    height: 10px;
+    margin: 5px 0;
+    font-family: GothamPro-Medium;
+    letter-spacing: 0.25em;
+}
+.col-md-3{
+    flex: 0 0 auto;
+    width: 18%;
+    height: 180px;
+    margin: 5px;
+    transition: 0.5s;
+    text-align: center;
+    justify-content: space-around;
+}
+.col-md-3:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.h3-col{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-family: GothamPro-Bold;
+}
+.resumo-col{
+    position: relative;
+    margin: 0 15px;
+    font-size: 15px;
+    line-height: 25px;
+    font-family: GothamPro-Light;
+    letter-spacing: 1;
+}
+
+                                                                                           /* Catálogo */
+section{
+    display: block;
+}
+.areas{
+    margin-left: 40px;
+    height: 25px;
+}
+.titulo_area{
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    display: block;
+}
+.linha{
+    background-color: #FFF; 
+    width: 95%;
+    height: 1px;
+    margin: 15px 0 0px 40px;
+    display: block;
+    position: relative;
+}
+.areas_lista{
+    padding: 30px 20px ;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.areas_lista::-webkit-scrollbar{
+    display: none;
+}
+
+.projeto{
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.projeto:hover{
+    cursor: pointer;
+    transform: scale(1.14);
+    z-index: 999;
+    transition: 0.5s;
+}
+.projeto:hover .projeto_info{
+    transform: scale(1);
+    transition: 0.5s;
+}
+.projeto:first-child{
+    margin-left: 100px;
+}
+.projeto_info{
+    background-color: #777e894f;
+    height: 80px;
+    width: 100%;
+    padding: 5px 5px 0 5px;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    transform: scale(0);
+}
+#link_projeto{
+     text-decoration: none;
+}
+.img_fluid{
+    height: 300px;
+    border-radius: 10px;
+}
+
+section{
+    position: relative;
+}
+section:hover{
+    z-index: 9;
+}
+.seta-esquerda, .seta-direita{
+  border: none;
+  width: 120px;
+  height: 350px;
+  position: absolute;
+  top: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 8;
+}
+#cor-seta-1{
+    background: linear-gradient(90deg, rgba(195, 29, 204, 0) 0%, #186071 100%);
+}
+#cor-seta-2{
+    background: linear-gradient(90deg, rgba(195, 29, 204, 0) 0%, #db7ca9 100%);
+}
+#cor-seta-3{
+    background: linear-gradient(90deg, rgba(195, 29, 204, 0) 0%, #01bcb4 100%);
+}
+#cor-seta-4{
+    background: linear-gradient(90deg, rgba(195, 29, 204, 0) 0%, #5f5cbf 100%);
+}
+#cor-seta-5{
+    background: linear-gradient(90deg, rgba(195, 29, 204, 0) 0%, #747474 100%);
+}
+.seta-esquerda{
+    left: 0;
+     transform: rotate(180deg);
+}
+.seta-direita{
+    right: 0;
+}
+
+
+/* Contato */
+#contato{
+    position: fixed;
+    top: 90%;
+    left: 1%;
+    padding: 10px;
+    z-index: 10000000;
+}
+
+/* UP */
+#subir{
+    display: none;
+    position: fixed;
+    right: 10;
+    top: 850;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    z-index: 100;
+    transform: rotate(270deg);
+    background-color: #57addf;
+    text-align: center;
+    border-radius: 10%;
+  align-items: center;
+}
+#subir:hover{
+    background-color: #015c91;
+    transition: all 0.3s;
+}
+#img-up{
+    margin: auto;
+  display: block;
+
+}
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                                                                                                    
+                                                                                                    
